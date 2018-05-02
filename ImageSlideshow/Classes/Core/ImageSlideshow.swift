@@ -200,6 +200,7 @@ open class ImageSlideshow: UIView {
         }
         addSubview(scrollView)
 
+		pageControl.minHeight = 10.0
         addSubview(pageControl)
         pageControl.addTarget(self, action: #selector(pageControlValueChanged), for: .valueChanged)
 
@@ -234,7 +235,7 @@ open class ImageSlideshow: UIView {
             pageControlBottomInset += self.safeAreaInsets.bottom
         }
 
-        pageControl.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: 10)
+        pageControl.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: pageControl.minHeight)
         pageControl.center = CGPoint(x: frame.size.width / 2, y: frame.size.height - pageControlBottomInset)
     }
 
