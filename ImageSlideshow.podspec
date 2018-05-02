@@ -35,6 +35,7 @@ Image slideshow is a Swift library providing customizable image slideshow with c
     core.resource_bundles = {
         'ImageSlideshow' => ['ImageSlideshow/Assets/*.png']
     }
+    core.dependency 'SMPageControl', '~> 1.2'
   end
 
   s.subspec 'AFURL' do |subspec|

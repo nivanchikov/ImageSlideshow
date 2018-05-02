@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SMPageControl
 
 /** 
     Used to represent position of the Page Control
@@ -49,7 +50,7 @@ open class ImageSlideshow: UIView {
     open let scrollView = UIScrollView()
 
     /// Page Control shown in the slideshow
-    open let pageControl = UIPageControl()
+    open let pageControl = SMPageControl()
 
     /// Activity indicator shown when loading image
     open var activityIndicator: ActivityIndicatorFactory? {
